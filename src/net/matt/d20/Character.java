@@ -17,15 +17,15 @@ public class Character {
         this.characterName = characterName;
         backpack = new Inventory();
     }
-
+    	// will add a given item into the players inventory //
     public void addItem(Items item) {
         backpack.addItem(item);
     }
-
+    	// will remove an item from the players inventory //
     public void removeItem(Items items) {
         backpack.removeItem(items);
     }
-
+    	// will display players inventory as a String output //
     public void showInventory() {
         System.out.println(characterName + "'s inventory: " + backpack.getInventory());
     }

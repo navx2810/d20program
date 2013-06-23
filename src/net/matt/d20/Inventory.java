@@ -16,16 +16,17 @@ public class Inventory {
     public Inventory() {
         inventory = new ArrayList<Items>();
     }
-
+    	// add an item to the array
     public void addItem(Items item) {
         inventory.add(item);
     }
-
+    	// remove an item from the array
     public void removeItem(Items items) {
         inventory.remove(items);
     }
 
     //TODO: Remove before final, TEST FUNCTION
+    	// send a string version of every item to the caller
     public String getInventory() {
         String msg = "";
         for (Items elem : inventory) {
