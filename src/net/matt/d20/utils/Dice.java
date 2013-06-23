@@ -1,4 +1,4 @@
-package net.matt.d20.net.matt.d20.utils;
+package net.matt.d20.utils;
 
 import java.util.Random;
 

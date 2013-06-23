@@ -1,4 +1,4 @@
-package net.matt.d20.net.matt.d20.utils;
+package net.matt.d20.utils;
 
 /**
  * Creator: Matt Fetterman - 6/23/13

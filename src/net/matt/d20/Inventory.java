@@ -1,8 +1,9 @@
 package net.matt.d20;
 
-import net.matt.d20.net.matt.d20.utils.Items;
 
 import java.util.ArrayList;
+
+import net.matt.d20.utils.Items;
 
 /**
  * Creator: Matt Fetterman - 6/23/13
