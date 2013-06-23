@@ -13,7 +13,13 @@ public class Campaign {
         log = String.format("%s - Start\n", name);
     }
     
-    //TODO: Create an add() function which will add a string to the log
+    public void add(String msg){
+    	//do the stuff here
+    }
+    
+    public  String getLod() {
+		return null;
+	}
     
     //TODO: Create a getLog() function that will dump the entire log so it can be saved to a file
 
