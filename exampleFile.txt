@@ -1,0 +1,4 @@
+#c - campaign start
+#l - log note
+#e - event note
+#q - ended the days campaign
