@@ -1,3 +1,6 @@
+This will be how the program will search for the save
+
+Keywords--------------|
 #c - campaign start
 #l - log note
 #e - event note
