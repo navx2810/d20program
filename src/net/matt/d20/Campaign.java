@@ -12,7 +12,7 @@ import java.util.Date;
  */
 
 public class Campaign {
-    String name;
+    public String name;
     StringBuilder log;
     Date date;
     SimpleDateFormat monthDateFormat, timeDateFormat;
