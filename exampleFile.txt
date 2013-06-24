@@ -5,3 +5,4 @@ Keywords--------------|
 #l - log note
 #e - event note
 #q - ended the days campaign
+#m - new campaign
