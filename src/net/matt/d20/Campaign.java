@@ -49,12 +49,12 @@ public class Campaign {
 		return log.toString();
 	}
     	// the function to use to continue a session that already has started
-    public void beginSession(){
-    	
+    public void resumeSession(){
+    	// open the file and read the entire log then add to it at the appropriate position.
     }
     	// ending a session
     public void endSession(){
-    	
+    	// Write a ending session tag with the time+date, the reader will learn to start from that location.
     }
    
 }
