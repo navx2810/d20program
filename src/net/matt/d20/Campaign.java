@@ -30,7 +30,6 @@ public class Campaign {
         timeDateFormat = new SimpleDateFormat("hh:mm a");
         
         log = new StringBuilder();
-        log.append(String.format("Campaign: %s - Start [%s || %s]\n===========", name, monthDateFormat.format(date), timeDateFormat.format(date)) );
     }
     	
     	/**
@@ -46,15 +45,28 @@ public class Campaign {
     	 * @return Log - the entire recorded summary of the current campaign.
     	 */
     public String getLog() {
+
 		return log.toString();
 	}
-    	// the function to use to continue a session that already has started
-    public void resumeSession(){
-    	// open the file and read the entire log then add to it at the appropriate position.
+    	// this function will start the new campaign file header instead of from the constructor
+    public void startCampaign(){
+        log.append(String.format("Campaign: %s - Start [%s || %s]\n===========", name, monthDateFormat.format(date), timeDateFormat.format(date)) );
     }
-    	// ending a session
+    
+    	/**
+    	 * will add the old campaign log to the new StringBuilder to resume the session
+    	 * @param oldLog - the old campaign log passed as a StringBuilder.
+    	 */
+    public void resumeSession(StringBuilder oldLog){
+    	this.log.append(oldLog.toString());
+    }
+    	
+    	/**
+    	 * will finish the current session and add the appropriate tags so the reader can pickup where it was left off.
+    	 */
     public void endSession(){
-    	// Write a ending session tag with the time+date, the reader will learn to start from that location.
+    		log.append(String.format("==++ SESSION ENDED: [%s || %s] ++==", timeDateFormat.format(date),monthDateFormat.format(date))); // Write a ending session tag with the time+date, the reader will learn to start from that location.
+    		//call the save campaign method from CampaignSaver
     }
    
 }
