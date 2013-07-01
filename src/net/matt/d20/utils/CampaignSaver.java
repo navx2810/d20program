@@ -19,7 +19,8 @@ public class CampaignSaver {
 	String campaignName;
 	
 	/**
-	 * Constructor that starts the campaign saver
+	 * Constructor that starts the campaign saver. This will automatically generate the appropriate starter
+	 * tags which can be readable by the saver.
 	 * @param campaign - the campaign that's currently being played
 	 * @throws Exception - file not found
 	 */
@@ -34,11 +35,15 @@ public class CampaignSaver {
 	}
 	
 	/**
-	 * 
+	 * The method that will save the current campaign
 	 */
+	//TODO: Remove the public accessor from this. Eventually, the Campaign will have a endSession method which will call this
 	public void saveCampaign() {
 		pWriter.print(campaign.getLog());
 		pWriter.close();
+	}
+	
+	public void loadCampaign() {
 	}
 	
 }
